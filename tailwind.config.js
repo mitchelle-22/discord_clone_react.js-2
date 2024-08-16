@@ -11,7 +11,9 @@ module.exports = {
         discord_purple: "#5865f2",
         discord_green: "#3ba55c",
         discord_serverBg: "#36393f",
-        discord_serversBg: "#202225"
+        discord_serversBg: "#202225",
+        discord_channelsBg: "#2f3136",
+        discord_serverNameHoverBg: "#34373c"
       },
       height:{
         "83vh" : "83vh"
@@ -21,5 +23,6 @@ module.exports = {
   plugins: [
     require('tailwindcss'),
     require('autoprefixer'),
+    require('tailwind-scrollbar-hide'),
   ],
 }

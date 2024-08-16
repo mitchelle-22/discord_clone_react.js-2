@@ -3,7 +3,7 @@ import { useAuthState } from 'react-firebase-hooks/auth'
 import  ServerIcon  from './SeverIcon'
 import { auth } from '../firebase'
 import { Navigate } from 'react-router-dom'
-import { PlusIcon } from '@heroicons/react/24/solid'
+import { ChevronDownIcon, PlusIcon } from '@heroicons/react/24/solid'
 
 function Home() {
 
@@ -27,6 +27,25 @@ function Home() {
              group-hover:text-white' />
           </div>
     </div>
+
+
+    <div className='bg-discord_serverBg flex flex-col min-w-max'>
+        <h2 className='flex text-white font-bold text-sm items-center
+        justify-between border-b border-gray-800 p-4
+        hover:bg-gray-700 cursor-pointer'>Offical Discord Server...<ChevronDownIcon className='h-5 ml-2' /> 
+        </h2>
+
+        <div className='text-gray-400 flex-grow overflow-scroll scrollbar-hide'>
+        <div className='flex items-center p-2 mb-2'>
+        <ChevronDownIcon className='h-3 mr-2' />
+        <h4 className='font-semibold'>Channels</h4>
+        <PlusIcon className=' h-6 ml-auto cursor-pointer hover:text-white' />
+        </div>
+        
+    </div>
+
+    </div>
+   
   </div>
   </>
 }
